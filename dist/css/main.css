@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  background-position: 0 -57%;
+  background-size: contain;
+}
+
+.card {
+  width: 330px;
+  border-radius: 20px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.card__img {
+  border-radius: 20px 20px 0 0;
+}
+
+.card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card__content__title {
+  color: #1f2f56;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.card__content__body {
+  color: #1f2f56;
+  opacity: .8;
+  font-weight: 500;
+  width: 245px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__content__pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: .5rem;
+  border-radius: 10px;
+  background-color: #f5f7ff;
+}
+
+.card__content__pricing__period {
+  text-align: left;
+  text-transform: capitalize;
+  color: #1f2f56;
+}
+
+.card__content__pricing__period__name {
+  color: #1f2f56;
+}
+
+.card__content__pricing__period__price {
+  opacity: .8;
+  font-size: .8rem;
+  text-transform: lowercase;
+}
+
+.card__content__pricing__link:hover__link {
+  background-color: #6156e6;
+}
+
+.card__content__payment {
+  width: 100%;
+  padding: .8rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  background-color: #3829e0;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 7px 15px 4px rgba(56, 41, 224, 0.23);
+          box-shadow: 0px 7px 15px 4px rgba(56, 41, 224, 0.23);
+  font-weight: 500;
+}
+
+.card__content__payment:hover {
+  background-color: #6156e6;
+}
+
+.card__content__cancel {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card__content__cancel:hover {
+  color: #1f2f56;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input,
+select,
+button,
+textarea {
+  outline: none;
+  font: inherit;
+}
+
+html,
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+figure, figcaption {
+  padding: 0;
+  margin: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style-type: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+@media (preferes-reduce-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *, *::after, *::before {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */

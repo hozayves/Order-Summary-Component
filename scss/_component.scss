@@ -1,0 +1,101 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    font-family: $font-family;
+    font-size: $font-size;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: map-get($colors, 'pale-blue');
+    background-position: 0 -57%;
+    background-size: contain;
+}
+.card {
+    width: 330px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__img {
+        border-radius: 20px 20px 0 0;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+
+        &__title {
+            color: map-get($colors, 'dark-blue');
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        &__body {
+            color: map-get($colors, 'dark-blue');
+            opacity: .8;
+            font-weight: 500;
+            width: 245px;
+            align-items: center;
+        }
+        &__pricing {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: .5rem;
+            border-radius: 10px;
+            background-color: map-get($colors, 'very-pale-blue');
+            &__period {
+                text-align: left;
+                text-transform: capitalize;
+                color: map-get($colors, 'dark-blue');
+                &__name {
+                    color: map-get($colors, 'dark-blue');
+                }
+                &__price {
+                    opacity: .8;
+                    font-size: .8rem;
+                    text-transform: lowercase;
+                }
+            }
+            &__link {
+                &:hover {
+                    &__link {
+                        background-color: lighten(map-get($colors, 'bright-blue'), 10%);
+                    }
+                }
+            }
+        }
+        &__payment {
+            width: 100%;
+            padding: .8rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1rem;
+            color: white;
+            background-color: map-get($colors, 'bright-blue');
+            outline: none;
+            border: 0;
+            cursor: pointer;
+            box-shadow: 0px 7px 15px 4px rgba(56,41,224,0.23);
+            font-weight: 500;
+            &:hover {
+                background-color: lighten(map-get($colors, 'bright-blue'), 10%);
+            }
+        }
+        &__cancel {
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+            &:hover {
+                color: map-get($colors, 'dark-blue')
+            }
+        }
+    }
+
+}
