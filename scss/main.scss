@@ -1,0 +1,57 @@
+
+// ====== RESET CSS =========
+
+// Remove border sixing rules
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+// Remove outline to form elements and inherit font
+input,
+select,
+button,
+textarea {
+    outline: none;
+    font: inherit;
+}
+// Remove padding and margin
+html,
+body,
+h1,h2,h3,h4,h5,h6,
+p,
+figure,figcaption  {
+    padding: 0;
+    margin: 0;
+}
+// Remove default list style
+ul[role='list'],
+ol[role='list'] {
+    list-style-type: none;
+}
+// Set core root rule
+html:focus-within {
+    scroll-behavior: smooth;
+}
+// Set core body 
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+}
+// Set img/picture easier
+img,
+picture {
+    max-width: 100%;
+    display: block
+}
+// Remove animation, 
+@media(preferes-reduce-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,*::after,*::before {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto!important;
+    }
+
+}
